@@ -75,21 +75,35 @@ namespace Proje
 
         private void createdatabase()
         {
-
-            try
+            using (var dbContext = new ProjeVeritabani())
             {
-                ProjeVeritabani Veri = new ProjeVeritabani();
-                Veri.Database.Create();
+                if (!dbContext.Database.Exists())
+                {
+                    try
+                    {
+                        ProjeVeritabani Veri = new ProjeVeritabani();
+                        Veri.Database.Create();
 
-                MessageBox.Show("Veritabanımız başarıyla oluşturuldu.");
-                GirisEkrani ac = new GirisEkrani();
-                ac.Show();
-                this.Hide();
+                        MessageBox.Show("Veritabanımız başarıyla oluşturuldu.");
+                        GirisEkrani ac = new GirisEkrani();
+                        ac.Show();
+                        this.Hide();
+                    }
+                    catch (Exception mesaj)
+                    {
+                        MessageBox.Show("Bir hata oluştu" + mesaj);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Veritabanı zaten daha önceden oluşturulmuş. Giriş ekranına yönlendiriliyorsunuz.");
+                    GirisEkrani a = new GirisEkrani();
+                    a.Show();
+                    this.Hide();
+                }
+                  
             }
-            catch (Exception mesaj)
-            {
-                MessageBox.Show("Bir hata oluştu" + mesaj);
-            }
+          
         }
 
         int i = 0;
