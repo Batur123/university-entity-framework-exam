@@ -34,21 +34,3 @@ C:\Users\badgo\Desktop\Manav Otomasyonu\Manav Otomasyonu\Proje\obj\Debug\Proje.c
 C:\Users\badgo\Desktop\Manav Otomasyonu\Manav Otomasyonu\Proje\obj\Debug\Proje.exe
 C:\Users\badgo\Desktop\Manav Otomasyonu\Manav Otomasyonu\Proje\obj\Debug\Proje.pdb
 C:\Users\badgo\Desktop\Manav Otomasyonu\Manav Otomasyonu\Proje\obj\Debug\Proje.GirisEkrani.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\Proje.exe.config
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\Proje.exe
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\Proje.pdb
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\EntityFramework.dll
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\EntityFramework.SqlServer.dll
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\EntityFramework.xml
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\bin\Debug\EntityFramework.SqlServer.xml
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.csprojAssemblyReference.cache
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.AnaMenu.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.BaslangicVeritabaniSayfasi.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.KayitOl.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.Properties.Resources.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.GirisEkrani.resources
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.csproj.GenerateResource.cache
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.csproj.CoreCompileInputs.cache
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.csproj.CopyComplete
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.exe
-D:\Batu\Batu - Bilgisayar Mühendisliği\GitHub Batuhan\Manav Otomasyonu\Proje\obj\Debug\Proje.pdb

@@ -35,6 +35,7 @@
             this.kadibox = new System.Windows.Forms.TextBox();
             this.sifrebox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,12 +110,24 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(351, 282);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(79, 17);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Yöneticiyim";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // GirisEkrani
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 402);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.sifrebox);
             this.Controls.Add(this.kadibox);
             this.Controls.Add(this.label2);
@@ -140,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox kadibox;
         private System.Windows.Forms.TextBox sifrebox;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

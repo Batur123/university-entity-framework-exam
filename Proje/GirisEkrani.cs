@@ -33,41 +33,90 @@ namespace Proje
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            BaslangicVeritabaniSayfasi.ProjeVeritabani dc = new BaslangicVeritabaniSayfasi.ProjeVeritabani();
+
+            if (checkBox1.Checked == true)
             {
-                if (kadibox.Text != string.Empty && sifrebox.Text != string.Empty)
+                try
                 {
-                    BaslangicVeritabaniSayfasi.ProjeVeritabani dc = new BaslangicVeritabaniSayfasi.ProjeVeritabani();
-                    var kullanicikontrol = dc.KullaniciTablosu.FirstOrDefault(a => a.KullaniciAdi.Equals(kadibox.Text));
-                    if (kullanicikontrol != null)
+                    if (kadibox.Text != string.Empty && sifrebox.Text != string.Empty)
                     {
-                        if (kullanicikontrol.KullaniciSifre.Equals(sifrebox.Text))
+                        
+                        var kullanicikontrol = dc.AdminKullanici.FirstOrDefault(a => a.AdminAd.Equals(kadibox.Text));
+                        if (kullanicikontrol != null)
                         {
-                            MessageBox.Show("Başarıyla giriş yaptınız!");
-                            AnaMenu b = new AnaMenu();
-                            b.Show();
-                            this.Hide();
+                            if (kullanicikontrol.AdminSifre.Equals(sifrebox.Text))
+                            {
+                                MessageBox.Show("Başarıyla giriş yaptınız! Yönetici paneline yönlendiriliyorsunuz...");
+                                AdminAnaMenu ac = new AdminAnaMenu();
+                                ac.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz.");
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz.");
+                            MessageBox.Show("Böyle bir yönetici bulunamadı. Lütfen tekrar deneyiniz.");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Böyle bir kullanıcı bulunamadı. Lütfen tekrar deneyiniz.");
+                        MessageBox.Show("Kullanıcı adı veya şifre kutusunu boş bırakmayınız!!!");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Kullanıcı adı veya şifre kutusunu boş bırakmayınız!!!");
-                }
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata" + ex);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Hata" + ex);
+                try
+                {
+                    if (kadibox.Text != string.Empty && sifrebox.Text != string.Empty)
+                    {
+                        //BaslangicVeritabaniSayfasi.ProjeVeritabani dc = new BaslangicVeritabaniSayfasi.ProjeVeritabani();
+                        var kullanicikontrol = dc.KullaniciTablosu.FirstOrDefault(a => a.KullaniciAdi.Equals(kadibox.Text));
+                        if (kullanicikontrol != null)
+                        {
+                            if (kullanicikontrol.KullaniciSifre.Equals(sifrebox.Text))
+                            {
+                                MessageBox.Show("Başarıyla giriş yaptınız!");
+                                AnaMenu ac = new AnaMenu();
+                                ac.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Böyle bir kullanıcı bulunamadı. Lütfen tekrar deneyiniz.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kullanıcı adı veya şifre kutusunu boş bırakmayınız!!!");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata" + ex);
+                }
             }
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
