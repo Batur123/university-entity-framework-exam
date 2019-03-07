@@ -21,5 +21,21 @@ namespace Proje
         {
 
         }
+
+        private void AnaMenu_Load(object sender, EventArgs e)
+        {
+
+            BaslangicVeritabaniSayfasi.ProjeVeritabani secim = new BaslangicVeritabaniSayfasi.ProjeVeritabani();
+            var urunler = from p in secim.StokMiktarlariTablosu
+                          select new
+                          {
+                              Ürün_Numarası = p.ID,
+                              Ürün_Adı = p.Adi,
+                              Ürün_Miktarı = p.Miktar,
+                              Kilogram_Fiyatı = p.KilogramFiyati
+
+                          };
+            dataGridView1.DataSource = urunler.ToList();
+        }
     }
 }

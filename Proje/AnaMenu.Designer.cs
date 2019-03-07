@@ -49,7 +49,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(496, 21);
+            this.button2.Location = new System.Drawing.Point(27, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(283, 38);
             this.button2.TabIndex = 1;
@@ -80,16 +80,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(316, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(316, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(615, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(443, 578);
             this.dataGridView1.TabIndex = 4;
             // 
             // AnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 602);
+            this.ClientSize = new System.Drawing.Size(780, 602);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -97,6 +97,7 @@
             this.Controls.Add(this.button1);
             this.Name = "AnaMenu";
             this.Text = "AnaMenu";
+            this.Load += new System.EventHandler(this.AnaMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -47,7 +47,7 @@ namespace Proje
             public int ID { get; set; }
             public string Adi { get; set; }
             public int Miktar { get; set; }
-            public int KilogramFiyati { get; set; }
+            public double KilogramFiyati { get; set; }
             public string ResimURL { get; set; }
         }
 

@@ -33,13 +33,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.urunadibox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.urunmiktaribox = new System.Windows.Forms.TextBox();
+            this.urunfiyatbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,13 +48,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(355, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 599);
+            this.dataGridView1.Size = new System.Drawing.Size(436, 599);
             this.dataGridView1.TabIndex = 0;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(688, 617);
+            this.button4.Location = new System.Drawing.Point(652, 617);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(139, 31);
             this.button4.TabIndex = 6;
@@ -65,7 +65,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button3.Location = new System.Drawing.Point(543, 617);
+            this.button3.Location = new System.Drawing.Point(508, 618);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 30);
             this.button3.TabIndex = 5;
@@ -78,9 +78,9 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(355, 618);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 30);
+            this.button1.Size = new System.Drawing.Size(147, 30);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Kullanıcı Bilgilerimi Düzenle";
+            this.button1.Text = "Admin Düzenle";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -92,14 +92,15 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // urunadibox
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 68);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 20);
-            this.textBox1.TabIndex = 8;
+            this.urunadibox.Location = new System.Drawing.Point(154, 68);
+            this.urunadibox.Multiline = true;
+            this.urunadibox.Name = "urunadibox";
+            this.urunadibox.Size = new System.Drawing.Size(177, 20);
+            this.urunadibox.TabIndex = 8;
             // 
             // label1
             // 
@@ -141,34 +142,34 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Kilogram Fiyatı:";
             // 
-            // textBox2
+            // urunmiktaribox
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 96);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 20);
-            this.textBox2.TabIndex = 13;
+            this.urunmiktaribox.Location = new System.Drawing.Point(154, 96);
+            this.urunmiktaribox.Multiline = true;
+            this.urunmiktaribox.Name = "urunmiktaribox";
+            this.urunmiktaribox.Size = new System.Drawing.Size(84, 20);
+            this.urunmiktaribox.TabIndex = 13;
             // 
-            // textBox3
+            // urunfiyatbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 124);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(84, 20);
-            this.textBox3.TabIndex = 14;
+            this.urunfiyatbox.Location = new System.Drawing.Point(154, 124);
+            this.urunfiyatbox.Multiline = true;
+            this.urunfiyatbox.Name = "urunfiyatbox";
+            this.urunfiyatbox.Size = new System.Drawing.Size(84, 20);
+            this.urunfiyatbox.TabIndex = 14;
             // 
             // AdminAnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 660);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(808, 660);
+            this.Controls.Add(this.urunfiyatbox);
+            this.Controls.Add(this.urunmiktaribox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.urunadibox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -176,6 +177,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "AdminAnaMenu";
             this.Text = "AdminAnaMenu";
+            this.Load += new System.EventHandler(this.AdminAnaMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -189,12 +191,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox urunadibox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox urunmiktaribox;
+        private System.Windows.Forms.TextBox urunfiyatbox;
     }
 }

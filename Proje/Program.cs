@@ -16,7 +16,7 @@ namespace Proje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BaslangicVeritabaniSayfasi());
+            Application.Run(new AdminAnaMenu());
         }
     }
 }
